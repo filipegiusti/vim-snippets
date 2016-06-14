@@ -258,13 +258,13 @@ $0
 endsnippet
 
 snippet asd "assert_difference"
-assert_difference "${1:Model}.${2:count}", ${3:1} do
+assert_difference -> { ${1:Model}.${2:count} }, ${3:1} do
 	$0
 end
 endsnippet
 
 snippet asnd "assert_no_difference"
-assert_no_difference "${1:Model}.${2:count}" do
+assert_no_difference -> { ${1:Model}.${2:count} } do
 	$0
 end
 endsnippet
